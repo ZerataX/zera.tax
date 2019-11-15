@@ -2,7 +2,12 @@
         "m.homeserver": {
                 "base_url": "https://matrix.zera.tax"
         },
-        "im.vector.integrations": {
-                "base_url": "https://dimension.dmnd.sh"
-        }
+        "m.integrations": {
+		"managers": [
+			{
+				"ui_url": "https://dimension.dmnd.sh/riot",
+				"rest_url": "https://dimension.dmnd.sh/api/v1/scalar"
+			}
+		]
+	}
 }
